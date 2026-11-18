@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Module</title>
+    <script>
+        function is_available(boolean) {
+            if (boolean) {
+                alert("The book is available");
+            } else {
+                alert("The book is not available");
+            }
+        }
+
+        function is_added(boolean) {
+            if (boolean) {
+                alert("The book has been added to your cart");
+            } else {
+                alert("The book cannot be added to your cart");
+            }
+        }
+
+        function increase_count(){
+            
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h2>Welcome to the Library</h2>
+        <p tag="header_text">Choose a book to check its availability or add it to your cart.</p>
+    </header>
+    <div class="flex-container">
+        <div class = "books">
+            <h3>DSA Book</h3>
+            <img src="/pre_JS/image.png" alt="">
+            <br><br>
+            <button onclick="is_available(true)">Check Book Availability</button><br><br>
+            <button onclick="is_added(true)">Add</button>
+        </div>
+    
+        <div class = "books">
+            <h3>JavaScript Book</h3>
+            <img src="/pre_JS/image copy.png" alt="">
+            <br><br>
+            <button onclick="is_available(false)">Check Book Availability</button><br><br>
+            <button onclick="is_added(false)">Add</button>
+        </div>
+
+        <div class = "books">
+            <h3>Python Book</h3>
+            <img src="/pre_JS/image copy 2.png" alt="">
+            <br><br>
+            <button onclick="is_available(true)">Check Book Availability</button><br><br>
+            <button onclick="is_added(true)">Add</button>
+        </div>
+    </div>
+    <style>
+
+        h2 {
+            text-align: center;
+            font-family: cursive;
+        }
+
+        h3
+        {
+            text-align: center;
+            font-family: monospace;
+        }
+        .flex-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .flex-container div {
+            text-align: center;
+        }
+        img {
+            border-radius: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: blue;
+        }
+
+        img{
+            width: 100px;
+            height: 160px;
+        }
+
+        header {
+            background-color: #f2f2f2;
+            text-align: center;
+            border-bottom: 2px solid #ccc;
+        }
+
+        #header_text {
+            font-size: 1.2em;
+            color: #333;
+        }
+
+        .books {
+            border: 1px solid #ccc;
+            font-size: 1.5em;
+            border-radius: 10px;
+            padding: 20px;
+            color: #555;
+        }
+
+        </style>
+</body>
+</html>
